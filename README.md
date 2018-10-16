@@ -7,8 +7,8 @@
 ## ANS (APIs)
 
 - Metrics https://github.com/isa-group/governify-project-poetisa-metrics
+- Evaluator https://github.com/isa-group/governify-project-poetisa-evaluator
 - Billing https://github.com/isa-group/governify-project-poetisa-billing
-- Translator https://github.com/isa-group/governify-project-poetisa-translator
 
 ## Render
 
