@@ -20,3 +20,4 @@
 
 ## Infux backups
 - https://github.com/isa-group/governify-project-poetisa-influx-backup
+- https://github.com/isa-group/governify-project-poetisa-mysql-to-influxdb
