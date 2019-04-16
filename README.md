@@ -12,7 +12,7 @@
 
 ## Render
 
-- Render https://github.com/isa-group/governify-project-poetisa-render
+- Render (both user and password for web UI is isa) https://github.com/isa-group/governify-project-poetisa-render
 
 ## Atenea
 
