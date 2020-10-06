@@ -1,23 +1,53 @@
-# governify-project-poetisa
+# POETISA Billing Manager
 
-## Monitoring Configuration:
+This is the landing page of the POETISA protype as described in the paper [A Flexible Billing Life Cycle for Cloud Services using Customised Customer Agreements](https://isa-group.github.io/2020-10-billing-lifecycle/)
 
-- Monitoring https://github.com/isa-group/governify-project-poetisa-monitoring
 
-## ANS (APIs)
+The POETISA Billing Manager provides a customizable engine to generate bills taking into account a richful SLA Model that can contain multiple compensations (penalties / rewards). As input data the protoype analyze the monitoring data (currently in a InfluxDB) of the infaestructure (Following the conventions of Container Cluster Monitoring and Performance Analysis for [Kubernetes](https://github.com/kubernetes/kubernetes))
 
-- Metrics https://github.com/isa-group/governify-project-poetisa-metrics
-- Evaluator https://github.com/isa-group/governify-project-poetisa-evaluator
-- Billing https://github.com/isa-group/governify-project-poetisa-billing
 
-## Render
 
-- Render (both user and password for web UI is isa) https://github.com/isa-group/governify-project-poetisa-render
+## System requirements
 
-## Atenea
+The software requirements are:
+- Docker (v19 and above)
+- NodeJS (v12 and above)
 
-- Atenea https://github.com/isa-group/governify-project-poetisa-atenea
+The system has been tested in the following environments:
+ - Ubuntu 18.04.4 LTS
+ - Catalina 10.15
 
-## Infux backups
-- https://github.com/isa-group/governify-project-poetisa-influx-backup
-- https://github.com/isa-group/governify-project-poetisa-mysql-to-influxdb
+
+## Quickstart guide
+
+The installation steps are as folling: 
+
+1.  Get the Setup code
+```bash
+ npx degit isa-group/governify-project-poetisa poetisa
+```
+
+2. Run setup
+```bash
+ cd poetisa
+ /bin/bash setup.sh
+```
+
+3. Check system
+In a browser, access: `http://localhost:8088/` with the credentials `poetisa`/`poetisa` (you can change this defaults by modifying the [configuration](https://github.com/isa-group/governify-project-poetisa-render/blob/master/src/backend/configurations/config.yaml)), you should see the poetisa ui: 
+
+![POETISA User Interface](./images/poetisa-ui.png)
+
+
+
+
+## First steps
+
+In order to test the system we can import the sample dataset of monitoring data in a real infraestracture (In the period **from April 2016 to Nov. 2017**) running the following command (in the `poetisa` folder as created in the Quick Start guide above):
+```bash
+IMPORT INFLUX 
+```
+
+By default, when starting the system the UI shows a default Agreement from the example described in the [paper](https://isa-group.github.io/2020-10-billing-lifecycle/). This default agreement can be modified in the UI for ephemeral tests or in the [sla model configuration file](https://github.com/isa-group/governify-project-poetisa-render/blob/master/src/frontend/index/model.json) for a permanent change.
+
+In order to calculate the billing for a given month, the period mus be selected and then press *Calculate BIlling* button.
