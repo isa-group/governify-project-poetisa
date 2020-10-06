@@ -34,4 +34,4 @@ npx degit isa-group/governify-project-poetisa-metrics metrics
  cd ..
 
 # Run InfluxDB
-docker run --name=influxdb -d -p 30086:8086 -e INFLUXDB_DB=k8s influxdb
+docker run --name=influxdb -d -p 30086:8086 influxdb
