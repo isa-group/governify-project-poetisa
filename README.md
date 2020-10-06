@@ -50,4 +50,6 @@ In order to test the system we can import the sample dataset of monitoring data 
 
 By default, when starting the system the UI shows a default Agreement from the example described in the [paper](https://isa-group.github.io/2020-10-billing-lifecycle/). This default agreement can be modified in the UI for ephemeral tests or in the [sla model configuration file](https://github.com/isa-group/governify-project-poetisa-render/blob/master/src/frontend/index/model.json) for a permanent change.
 
-In order to calculate the billing for a given month, the period mus be selected and then press *Calculate BIlling* button.
+In order to calculate the billing for a given month, the period mus be selected and then press *Calculate Billing* button.
+
+![POETISA User Interface](./images/poetisa-ui-calc.png)
