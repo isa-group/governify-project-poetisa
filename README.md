@@ -10,8 +10,8 @@ The POETISA Billing Manager provides a customizable engine to generate bills tak
 ## System requirements
 
 The software requirements are:
-- Docker (v19 and above)
-- NodeJS (v12 and above)
+- Docker (v19 or above)
+- NodeJS (v12 or above)
 
 The system has been tested in the following environments:
  - Ubuntu 18.04.4 LTS
