@@ -45,7 +45,7 @@ In a browser, access: `http://localhost:8088/` with the credentials `poetisa`/`p
 
 In order to test the system we can import the sample dataset of monitoring data in a real infraestracture (In the period **from April 2016 to Nov. 2017**) running the following command (in the `poetisa` folder as created in the Quick Start guide above):
 ```bash
-IMPORT INFLUX 
+/bin/bash import-data.sh
 ```
 
 By default, when starting the system the UI shows a default Agreement from the example described in the [paper](https://isa-group.github.io/2020-10-billing-lifecycle/). This default agreement can be modified in the UI for ephemeral tests or in the [sla model configuration file](https://github.com/isa-group/governify-project-poetisa-render/blob/master/src/frontend/index/model.json) for a permanent change.
