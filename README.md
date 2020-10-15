@@ -20,7 +20,7 @@ The system has been tested in the following environments:
 
 ## Quickstart guide
 
-The installation steps are as folling: 
+The installation steps are as folling (using a **bash shell**): 
 
 1.  Get the Setup code
 ```bash
