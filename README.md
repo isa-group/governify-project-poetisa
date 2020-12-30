@@ -1,6 +1,6 @@
 # POETISA Billing Manager
 
-This is the landing page of the POETISA protype as described in the paper [A Flexible Billing Life Cycle for Cloud Services using Customised Customer Agreements](https://isa-group.github.io/2020-10-billing-lifecycle/)
+This is the landing page of the POETISA protype as described in the paper [A Flexible Billing Life Cycle for Cloud Services using Augmented Customer Agreements](https://isa-group.github.io/2020-10-billing-lifecycle/)
 
 
 The POETISA Billing Manager provides a customizable engine to generate bills taking into account a richful SLA Model that can contain multiple compensations (penalties / rewards). As input data the protoype analyze the monitoring data (stored in [InfluxDB](https://github.com/influxdata/influxdb)) of the infaestructure (Following the conventions of Container Cluster Monitoring and Performance Analysis for [Kubernetes](https://github.com/kubernetes/kubernetes))
