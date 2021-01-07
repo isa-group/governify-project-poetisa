@@ -43,7 +43,7 @@ In a browser, access: `http://localhost:8088/` with the credentials `poetisa`/`p
 
 ## First steps
 
-In order to test the system we can import the sample dataset of monitoring data in a real infraestracture (In the period **from April 2016 to Nov. 2017**) running the following command (in the `poetisa` folder as created in the Quick Start guide above):
+In order to test the system we can import the sample dataset of monitoring data in a real infrastructure (In the period **from April 2016 to Nov. 2017**) running the following command (in the `poetisa` folder as created in the Quick Start guide above):
 ```bash
 /bin/bash import-data.sh
 ```
